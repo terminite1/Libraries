@@ -6,7 +6,7 @@ end
 repeat wait() until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character.Parent
 task.wait(2)
 notify("Starting soon")
-syn.queue_on_teleport("print('gwehglnkwhj')"..game:HttpGet(""))
+syn.queue_on_teleport("print('gwehglnkwhj')"..game:HttpGet("https://raw.githubusercontent.com/terminite1/Libraries/main/jtohxmas.txt"))
 
 local function collectPresents()
     for i,v in pairs(workspace.PresentLocations:GetChildren()) do
