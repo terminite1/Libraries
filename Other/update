@@ -1,1 +1,10 @@
-boom
+<Major Update>
+* Improved sensitivity calculation consistency (The corresponding functions are in one module instead of everywhere)
+* Added sensitivity to InfoUI
+* Centered the InfoUIModifiers UI
+* Integrated center of mass changing within InfoUIModifiers
+* ToEC jump moved into air
+* Added a few "jumps"
+* More chests
+* Added a bonus section
+* Changed update text methodology
