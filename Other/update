@@ -1,10 +1,11 @@
-<Major Update>
-* Improved sensitivity calculation consistency (The corresponding functions are in one module instead of everywhere)
-* Added sensitivity to InfoUI
-* Centered the InfoUIModifiers UI
-* Integrated center of mass changing within InfoUIModifiers
-* ToEC jump moved into air
-* Added a few "jumps"
-* More chests
-* Added a bonus section
-* Changed update text methodology
+* Fixed incorrect degrees -> sensitivity algorithm
+
+Here's a way to find the pixels you need to turn:
+Get initial degrees
+convert to sensitivity by doing degrees * 25/9
+now to actually find pixels:
+get the result of the following: log2(sensitivity / 100) (this is equivalent to log(sensitivity/100) / log(2))
+this gives us our factor, round it up please !
+now divide the sensitivity by 2 ^ factor
+^ this returns the sensitivity required
+now divide the original amount of degrees by its sensitivity and round up
